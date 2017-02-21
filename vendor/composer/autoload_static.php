@@ -6,9 +6,48 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit4322521dd8158eda6cdfaa50df35678d
 {
+    public static $prefixLengthsPsr4 = array (
+        'R' => 
+        array (
+            'ROOT\\Util\\' => 10,
+            'ROOT\\PLUGINS\\' => 13,
+            'ROOT\\Api\\' => 9,
+            'ROOT\\' => 5,
+        ),
+        'N' => 
+        array (
+            'NoahBuscher\\Macaw\\' => 18,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'ROOT\\Util\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Util',
+        ),
+        'ROOT\\PLUGINS\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/plugins',
+        ),
+        'ROOT\\Api\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Api',
+        ),
+        'ROOT\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/',
+        ),
+        'NoahBuscher\\Macaw\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/noahbuscher/macaw',
+        ),
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInit4322521dd8158eda6cdfaa50df35678d::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit4322521dd8158eda6cdfaa50df35678d::$prefixDirsPsr4;
 
         }, null, ClassLoader::class);
     }

@@ -1,4 +1,13 @@
 {
   "require": {
+    "noahbuscher/macaw": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "ROOT\\": ".",
+      "ROOT\\PLUGINS\\": "plugins",
+      "ROOT\\Api\\": "Api",
+      "ROOT\\Util\\": "Util"
+    }
   }
 }

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8caca834-4bf2-4d6c-aa8c-1b09062944bf" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/demo/phpexcel_test.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Autoloader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/CachedObjectStorage/APC.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/CachedObjectStorage/CacheBase.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/CachedObjectStorage/DiscISAM.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/CachedObjectStorage/ICache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/CachedObjectStorage/Igbinary.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/CachedObjectStorage/Memcache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/CachedObjectStorage/Memory.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/CachedObjectStorage/MemoryGZip.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/CachedObjectStorage/MemorySerialized.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/CachedObjectStorage/PHPTemp.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/CachedObjectStorage/SQLite.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/CachedObjectStorage/SQLite3.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/CachedObjectStorage/Wincache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/CachedObjectStorageFactory.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Calculation.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Calculation/Database.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Calculation/DateTime.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Calculation/Engineering.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Calculation/Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Calculation/ExceptionHandler.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Calculation/Financial.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Calculation/FormulaParser.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Calculation/FormulaToken.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Calculation/Function.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Calculation/Functions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Calculation/Logical.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Calculation/LookupRef.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Calculation/MathTrig.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Calculation/Statistical.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Calculation/TextData.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Cell.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Cell/AdvancedValueBinder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Cell/DataType.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Cell/DataValidation.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Cell/DefaultValueBinder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Cell/Hyperlink.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Cell/IValueBinder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Chart.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Chart/DataSeries.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Chart/DataSeriesValues.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Chart/Layout.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Chart/Legend.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Chart/PlotArea.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Chart/Renderer/jpgraph.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Chart/Title.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Comment.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/DocumentProperties.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/DocumentSecurity.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/HashTable.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/IComparable.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/IOFactory.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/NamedRange.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Reader/CSV.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Reader/DefaultReadFilter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Reader/Excel2003XML.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Reader/Excel2007.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Reader/Excel2007/Chart.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Reader/Excel2007/Theme.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Reader/Excel5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Reader/Excel5/Escher.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Reader/Gnumeric.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Reader/IReadFilter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Reader/IReader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Reader/OOCalc.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Reader/SYLK.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/ReferenceHelper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/RichText.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/RichText/ITextElement.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/RichText/Run.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/RichText/TextElement.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Settings.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Shared/CodePage.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Shared/Date.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Shared/Drawing.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Shared/Escher.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Shared/Escher/DgContainer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Shared/Escher/DgContainer/SpgrContainer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Shared/Escher/DgContainer/SpgrContainer/SpContainer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Shared/Escher/DggContainer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Shared/Escher/DggContainer/BstoreContainer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Shared/Escher/DggContainer/BstoreContainer/BSE.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Shared/Escher/DggContainer/BstoreContainer/BSE/Blip.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Shared/Excel5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Shared/File.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Shared/Font.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Shared/OLE.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Shared/OLE/ChainedBlockStream.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Shared/OLE/PPS.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Shared/OLE/PPS/File.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Shared/OLE/PPS/Root.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Shared/OLERead.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Shared/PasswordHasher.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Shared/String.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Shared/XMLWriter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Shared/ZipArchive.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Shared/ZipStreamWrapper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Style.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Style/Alignment.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Style/Border.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Style/Borders.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Style/Color.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Style/Conditional.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Style/Fill.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Style/Font.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Style/NumberFormat.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Style/Protection.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Worksheet.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Worksheet/BaseDrawing.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Worksheet/CellIterator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Worksheet/ColumnDimension.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Worksheet/Drawing.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Worksheet/Drawing/Shadow.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Worksheet/HeaderFooter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Worksheet/HeaderFooterDrawing.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Worksheet/MemoryDrawing.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Worksheet/PageMargins.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Worksheet/PageSetup.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Worksheet/Protection.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Worksheet/Row.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Worksheet/RowDimension.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Worksheet/RowIterator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Worksheet/SheetView.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/WorksheetIterator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Writer/CSV.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Writer/Excel2007.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Writer/Excel2007/Chart.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Writer/Excel2007/Comments.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Writer/Excel2007/ContentTypes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Writer/Excel2007/DocProps.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Writer/Excel2007/Drawing.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Writer/Excel2007/Rels.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Writer/Excel2007/StringTable.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Writer/Excel2007/Style.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Writer/Excel2007/Theme.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Writer/Excel2007/Workbook.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Writer/Excel2007/Worksheet.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Writer/Excel2007/WriterPart.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Writer/Excel5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Writer/Excel5/BIFFwriter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Writer/Excel5/Escher.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Writer/Excel5/Font.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Writer/Excel5/Parser.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Writer/Excel5/Workbook.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Writer/Excel5/Worksheet.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Writer/Excel5/Xf.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Writer/HTML.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Writer/IWriter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpexcel/PHPExcel/Writer/PDF.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/defines.php" afterPath="$PROJECT_DIR$/config/defines.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="composer.lock" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/composer.lock">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="34" column="14" lean-forward="true" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="24" />
+    <option name="width" value="1366" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lanse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lanse" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8caca834-4bf2-4d6c-aa8c-1b09062944bf" name="Default" comment="" />
+      <created>1487659418738</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1487659418738</updated>
+      <workItem from="1487659422952" duration="38000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="38000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="24" width="1366" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/composer.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="34" column="14" lean-forward="true" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

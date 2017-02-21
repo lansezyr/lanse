@@ -6,4 +6,9 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'ROOT\\Util\\' => array($baseDir . '/Util'),
+    'ROOT\\PLUGINS\\' => array($baseDir . '/plugins'),
+    'ROOT\\Api\\' => array($baseDir . '/Api'),
+    'ROOT\\' => array($baseDir . '/'),
+    'NoahBuscher\\Macaw\\' => array($vendorDir . '/noahbuscher/macaw'),
 );
