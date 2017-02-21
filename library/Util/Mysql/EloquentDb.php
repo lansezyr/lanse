@@ -5,7 +5,7 @@
  * User: lanse
  */
 
-namespace ROOT\Util\Mysql;
+namespace ROOT\Library\Util\Mysql;
 
 use Illuminate\Database\Capsule\Manager as DB;
 use Illuminate\Events\Dispatcher;

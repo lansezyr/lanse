@@ -6,10 +6,10 @@
  * Date: 16-08-01 上午11:12
  */
 
-namespace ROOT\Util\Mysql;
+namespace ROOT\Library\Util\Mysql;
 
-use Pub\Mysql\Mysqli\SqlBuilder;
-use Pub\Mysql\Mysqli\DBMysql;
+use ROOT\Library\Util\Mysql\Mysqli\SqlBuilder;
+use ROOT\Library\Util\Mysql\Mysqli\DBMysql;
 
 error_reporting(E_ERROR);
 

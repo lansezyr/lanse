@@ -3,7 +3,7 @@
  * @author  lanse
  */
 
-namespace ROOT\Util\Mysql\Mysqli;
+namespace ROOT\Library\Util\Mysql\Mysqli;
 
 class SqlBuilder
 {

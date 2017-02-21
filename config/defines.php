@@ -6,18 +6,35 @@
  * Time: 下午1:20
  */
 $rootDir = dirname(__DIR__);
-$pluginDir = $rootDir . '/plugins';
+$configDir = dirname(__FILE__);
+$pluginDir = $rootDir . '/library/plugins';
 
 if(!defined('ROOT')){
     define('ROOT',            $rootDir);
 }
 
 if(!defined('PLUGINS')){
-    define('PLUGINS',            $pluginDir);
+    define('PLUGINS',         $pluginDir);
 }
 
 if(!defined('PHPEXCEL')){
-    define('PHPEXCEL',            $pluginDir . '/phpexcel');
+    define('PHPEXCEL',        $pluginDir . '/phpexcel');
+}
+
+if(!defined('API')){
+    define('API',            $rootDir . '/library/Api');
+}
+
+if(!defined('MODEL')){
+    define('MODEL',            $rootDir . '/library/Model');
+}
+
+if(!defined('UTIL')){
+    define('UTIL',            $rootDir . '/library/Util');
+}
+
+if(!defined('CONF')){
+    define('CONF',            $configDir);
 }
 
 

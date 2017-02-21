@@ -6,13 +6,10 @@
  * Date: 16-08-01 上午11:12
  */
 
-namespace ROOT\Util\Mysql;
-
-use Pub\Mysql\PdoHandle;
+namespace ROOT\Library\Util\Mysql;
 
 use PDO;
 use Exception;
-use Pub\Log\Logger;
 
 class PdoManager
 {
@@ -61,7 +58,7 @@ class PdoManager
         $this->slaveConfig = $slaveServer;
         $this->database = $database;
 
-        $this->logger = new Logger('/data/service_logs/services/', 'mysql');
+     //   $this->logger = new Logger('/data/service_logs/services/', 'mysql');
 
         return true;
     }
@@ -528,7 +525,7 @@ EOF;
      */
     public function logError($msg = '')
     {
-        $this->logger->logError($msg . "\n");
+ //       $this->logger->logError($msg . "\n");
 //      throw new Exception($msg);
     }
 
@@ -539,7 +536,7 @@ EOF;
      */
     public function throwException($exception = null, $msg = '')
     {
-        $this->logger->logError($msg . "\n" . $exception->getMessage());
+ //       $this->logger->logError($msg . "\n" . $exception->getMessage());
 //      throw new Exception($msg);
     }
 

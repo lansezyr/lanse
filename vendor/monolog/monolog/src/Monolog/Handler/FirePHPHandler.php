@@ -33,7 +33,7 @@ class FirePHPHandler extends AbstractProcessingHandler
     /**
      * Must reference a "known" plugin, otherwise headers won't display in FirePHP
      */
-    const PLUGIN_URI = 'http://meta.firephp.org/Wildfire/Plugin/FirePHP/Library-FirePHPCore/0.3';
+    const PLUGIN_URI = 'http://meta.firephp.org/Wildfire/Plugin/FirePHP/library-FirePHPCore/0.3';
 
     /**
      * Header prefix for Wildfire to recognize & parse headers

@@ -7,7 +7,7 @@
  * Brief： 入口文件
  */
 // Autoload 自动载入
-require '../vendor/autoload.php';
+require_once dirname(__DIR__).'/vendor/autoload.php';
 
 // 路由配置
-require '../config/routes.php';
+require_once dirname(__FILE__) .'/../config/routes.php';

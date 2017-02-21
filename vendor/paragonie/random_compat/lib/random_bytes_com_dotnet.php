@@ -1,6 +1,6 @@
 <?php
 /**
- * Random_* Compatibility Library 
+ * Random_* Compatibility library 
  * for using the new PHP 7 random_* API in PHP 5 projects
  * 
  * The MIT License (MIT)

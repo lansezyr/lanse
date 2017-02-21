@@ -6,7 +6,7 @@
  * Time: 下午1:14
  * Brief: 测试phpexcel类
  */
-require_once dirname(__DIR__) . '/../config/defines.php';
+require_once dirname(__DIR__) . '/../../config/defines.php';
 require_once PHPEXCEL . '/PHPExcel.php';
 
 class phpExcelTest {

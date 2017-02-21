@@ -6,9 +6,10 @@
   "autoload": {
     "psr-4": {
       "ROOT\\": ".",
-      "ROOT\\PLUGINS\\": "plugins",
-      "ROOT\\Api\\": "Api",
-      "ROOT\\Util\\": "Util"
+      "ROOT\\Library\\PLUGINS\\": "plugins",
+      "ROOT\\Library\\Api\\": "library/Api",
+      "ROOT\\Library\\Util\\": "library/Util",
+      "ROOT\\Library\\Model\\": "library/Model"
     }
   }
 }

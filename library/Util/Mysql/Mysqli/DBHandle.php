@@ -4,7 +4,7 @@
  * OO版本的MySQL访问接口对象，由DBMysql::createDBHandle2创建
  */
 
-namespace ROOT\Util\Mysql\Mysqli;
+namespace ROOT\Library\Util\Mysql\Mysqli;
 
 class DBHandle
 {

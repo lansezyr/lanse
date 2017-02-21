@@ -6,11 +6,10 @@
  * Date: 16-09-09 上午11:12
  */
 
-namespace ROOT\Util\Mysql;
+namespace ROOT\Library\Util\Mysql;
 
 use PDO;
 use Exception;
-use Pub\Log\Logger;
 
 class PdoHandle
 {
@@ -20,7 +19,7 @@ class PdoHandle
 
     public $handler_key = '';
 
-    public $logger = null;
+    //public $logger = null;
 
     /**
      * PdoHandle constructor.
@@ -28,7 +27,7 @@ class PdoHandle
      */
     public function __construct($config = [])
     {
-        $this->logger = new Logger('/data/service_logs/services/', 'mysql');
+     //   $this->logger = new Logger('/data/service_logs/services/', 'mysql');
 
         for ($i = 1; $i < 3; $i++) {
             try {

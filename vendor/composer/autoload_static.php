@@ -42,9 +42,10 @@ class ComposerStaticInit4322521dd8158eda6cdfaa50df35678d
         'R' => 
         array (
             'Ramsey\\Uuid\\' => 12,
-            'ROOT\\Util\\' => 10,
-            'ROOT\\PLUGINS\\' => 13,
-            'ROOT\\Api\\' => 9,
+            'ROOT\\Library\\Util\\' => 18,
+            'ROOT\\Library\\PLUGINS\\' => 21,
+            'ROOT\\Library\\Model\\' => 19,
+            'ROOT\\Library\\Api\\' => 17,
             'ROOT\\' => 5,
         ),
         'P' => 
@@ -146,17 +147,21 @@ class ComposerStaticInit4322521dd8158eda6cdfaa50df35678d
         array (
             0 => __DIR__ . '/..' . '/ramsey/uuid/src',
         ),
-        'ROOT\\Util\\' => 
+        'ROOT\\Library\\Util\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/Util',
+            0 => __DIR__ . '/../..' . '/library/Util',
         ),
-        'ROOT\\PLUGINS\\' => 
+        'ROOT\\Library\\PLUGINS\\' => 
         array (
             0 => __DIR__ . '/../..' . '/plugins',
         ),
-        'ROOT\\Api\\' => 
+        'ROOT\\Library\\Model\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/Api',
+            0 => __DIR__ . '/../..' . '/library/Model',
+        ),
+        'ROOT\\Library\\Api\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/library/Api',
         ),
         'ROOT\\' => 
         array (
