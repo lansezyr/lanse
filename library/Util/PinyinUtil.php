@@ -2,9 +2,10 @@
 /**
  * PinyinNamespace
  */
-namespace ROOT\Library\Util\PinYin;
+namespace ROOT\Library\Util;
 
-class PinyinNamespace{
+use \ROOT\Library\Util\PinYin\PinyinConfig;
+class PinyinUtil{
     /* {{{ chinese2pinyin */
     /**
      * @brief 汉字转拼音

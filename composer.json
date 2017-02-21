@@ -1,7 +1,9 @@
 {
   "require": {
     "laravel/framework": "5.3.*",
-    "noahbuscher/macaw": "dev-master"
+    "noahbuscher/macaw": "dev-master",
+    "guzzlehttp/guzzle": "^6.2",
+    "ark/database": "^0.1.8"
   },
   "autoload": {
     "psr-4": {
