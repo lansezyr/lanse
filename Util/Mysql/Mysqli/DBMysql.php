@@ -6,8 +6,6 @@
 
 namespace ROOT\Util\Mysql\Mysqli;
 
-use Pub\Log\Logger;
-
 if (!defined('SLOW_QUERY_MIN')) {
     define('SLOW_QUERY_MIN', 200);
 }
@@ -160,7 +158,7 @@ class DBMysql
                         $is_encoding_set_success = mysqli_query($handle, "set names utf8mb4");
                     }
                     if ($is_encoding_set_success === FALSE) {
-                        self::logError(sprintf("Connect Set Charset Failed1:%s, db_config_array=%s", mysqli_error($handle), var_export($logArray, true)), 'mysqlns.connect');
+                        //self::logError(sprintf("Connect Set Charset Failed1:%s, db_config_array=%s", mysqli_error($handle), var_export($logArray, true)), 'mysqlns.connect');
                         $is_encoding_set_success = mysqli_set_charset($handle, "utf8");
                     }
                     break;
@@ -170,7 +168,7 @@ class DBMysql
                 default:
             }
             if (FALSE === $is_encoding_set_success) {
-                self::logError(sprintf("Connect Set Charset Failed2:%s, db_config_array=%s", mysqli_error($handle), var_export($logArray, true)), 'mysqlns.connect');
+                //self::logError(sprintf("Connect Set Charset Failed2:%s, db_config_array=%s", mysqli_error($handle), var_export($logArray, true)), 'mysqlns.connect');
                 mysqli_close($handle);
                 break;
             }
@@ -182,7 +180,7 @@ class DBMysql
         $password_part = isset($password) ? substr($password, 0, 5) . '...' : '';
         $logArray = $db_config_array;
         $logArray['password'] = $password_part;
-        self::logError(sprintf("Connect failed:db_config_array=%s", var_export($logArray, true) . '##param##' . var_export($_REQUEST, true)), 'mysqlns.connect');
+     //   //self::logError(sprintf("Connect failed:db_config_array=%s", var_export($logArray, true) . '##param##' . var_export($_REQUEST, true)), 'mysqlns.connect');
         return FALSE;
     }
 
@@ -213,13 +211,13 @@ class DBMysql
         if (self::mysqliQueryApi($handle, $sql)) {
             $tm_used = intval((DateTime::getMicrosecond() - $tm) / 1000);
             if ($tm_used > SLOW_QUERY_MIN && rand(0, SLOW_QUERY_SAMPLE) == 1) {
-                self::logWarn("ms=$tm_used, SQL=$sql", 'mysqlns.slow');
+                //self::logWarn("ms=$tm_used, SQL=$sql", 'mysqlns.slow');
             }
             @self::logFang($sql);
             return TRUE;
         }
         // to_do, execute sql语句失败， 需要记log
-        self::logError("SQL Error: $sql, errno=" . self::getLastError($handle), 'mysql');
+     //   //self::logError("SQL Error: $sql, errno=" . self::getLastError($handle), 'mysql');
 
         return FALSE;
     }
@@ -244,7 +242,7 @@ class DBMysql
             return $lastid;
         } while (FALSE);
         // to_do, execute sql语句失败， 需要记log
-        self::logError("SQL Error: $sql, errno=" . self::getLastError($handle), 'mysql');
+   //     //self::logError("SQL Error: $sql, errno=" . self::getLastError($handle), 'mysql');
         return FALSE;
     }
 
@@ -263,13 +261,13 @@ class DBMysql
             }
             if ($result === true) {
                 if (rand(1, 10) == 1) {
-                    self::logWarn("err.func.query,SQL=$sql", 'mysqlns.query');
+                    //self::logWarn("err.func.query,SQL=$sql", 'mysqlns.query');
                 }
                 return array();
             }
             $tm_used = intval((DateTime::getMicrosecond() - $tm) / 1000);
             if ($tm_used > SLOW_QUERY_MIN && rand(0, SLOW_QUERY_SAMPLE) == 1) {
-                self::logWarn("ms=$tm_used, SQL=$sql", 'mysqlns.slow');
+                //self::logWarn("ms=$tm_used, SQL=$sql", 'mysqlns.slow');
             }
             $res = array();
             while ($row = mysqli_fetch_assoc($result)) {
@@ -280,7 +278,7 @@ class DBMysql
             return $res;
         } while (FALSE);
         // to_do, execute sql语句失败， 需要记log
-        self::logError("SQL Error: $sql, errno=" . self::getLastError($handle), 'mysql');
+    //    //self::logError("SQL Error: $sql, errno=" . self::getLastError($handle), 'mysql');
 
         return FALSE;
     }
@@ -299,7 +297,7 @@ class DBMysql
                 break;
             $tm_used = intval((DateTime::getMicrosecond() - $tm) / 1000);
             if ($tm_used > SLOW_QUERY_MIN && rand(0, SLOW_QUERY_SAMPLE) == 1) {
-                self::logWarn("ms=$tm_used, SQL=$sql", 'mysqlns.slow');
+                //self::logWarn("ms=$tm_used, SQL=$sql", 'mysqlns.slow');
             }
 
             $row = mysqli_fetch_assoc($result);
@@ -308,7 +306,7 @@ class DBMysql
             return $row;
         } while (FALSE);
         // to_do, execute sql语句失败， 需要记log
-        self::logError("SQL Error: $sql," . self::getLastError($handle), 'mysql');
+    //    //self::logError("SQL Error: $sql," . self::getLastError($handle), 'mysql');
         return FALSE;
     }
 
@@ -413,7 +411,7 @@ class DBMysql
     {
         if (!is_object($handle) || $handle->thread_id < 1) {
             if ($log_category) {
-                self::logError(sprintf("handle Error: handle='%s'", var_export($handle, true)), $log_category);
+       //         //self::logError(sprintf("handle Error: handle='%s'", var_export($handle, true)), $log_category);
             }
             return false;
         }
@@ -506,8 +504,8 @@ class DBMysql
     protected static function logError($message, $category)
     {
 //        if (class_exists('Logger')) {
-        $logger = new Logger('/data/service_logs/services/', 'mysql');
-        $logger->logError($message);
+//        $logger = new Logger('/data/service_logs/services/', 'mysql');
+//        $logger->logError($message);
 //        }
     }
 
@@ -517,8 +515,8 @@ class DBMysql
     protected static function logWarn($message, $category)
     {
 //        if (class_exists('Logger')) {
-        $logger = new Logger('/data/service_logs/services/', 'mysql');
-        $logger->logWarn($message);
+//        $logger = new Logger('/data/service_logs/services/', 'mysql');
+//        $logger->logWarn($message);
 //        }
     }
 }
