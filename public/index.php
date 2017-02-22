@@ -6,8 +6,7 @@
  * Time: 下午2:24
  * Brief： 入口文件
  */
-// Autoload 自动载入
-require_once dirname(__DIR__).'/vendor/autoload.php';
 
-// 路由配置
-require_once dirname(__FILE__) .'/../config/routes.php';
+require_once dirname(__DIR__).'/bootstrap.php';
+
+\ROOT\App\App::run();

@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Xiaoler\\Blade\\' => array($vendorDir . '/xiaoler/blade/src'),
     'XdgBaseDir\\' => array($vendorDir . '/dnoegel/php-xdg-base-dir/src'),
     'Symfony\\Polyfill\\Util\\' => array($vendorDir . '/symfony/polyfill-util'),
     'Symfony\\Polyfill\\Php56\\' => array($vendorDir . '/symfony/polyfill-php56'),
@@ -26,6 +27,7 @@ return array(
     'ROOT\\Library\\PLUGINS\\' => array($baseDir . '/plugins'),
     'ROOT\\Library\\Model\\' => array($baseDir . '/library/Model'),
     'ROOT\\Library\\Api\\' => array($baseDir . '/library/Api'),
+    'ROOT\\App\\' => array($baseDir . '/app'),
     'ROOT\\' => array($baseDir . '/'),
     'Psy\\' => array($vendorDir . '/psy/psysh/src/Psy'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
@@ -38,6 +40,7 @@ return array(
     'GuzzleHttp\\Psr7\\' => array($vendorDir . '/guzzlehttp/psr7/src'),
     'GuzzleHttp\\Promise\\' => array($vendorDir . '/guzzlehttp/promises/src'),
     'GuzzleHttp\\' => array($vendorDir . '/guzzlehttp/guzzle/src'),
+    'FastRoute\\' => array($vendorDir . '/nikic/fast-route/src'),
     'Dotenv\\' => array($vendorDir . '/vlucas/phpdotenv/src'),
     'Cron\\' => array($vendorDir . '/mtdowling/cron-expression/src/Cron'),
     'ClassPreloader\\' => array($vendorDir . '/classpreloader/classpreloader/src'),

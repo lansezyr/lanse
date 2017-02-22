@@ -18,11 +18,14 @@ class ComposerStaticInit4322521dd8158eda6cdfaa50df35678d
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+        'e1edc6b39e340029dfa1d72c228b8497' => __DIR__ . '/..' . '/xiaoler/blade/src/helpers.php',
+        '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
         'X' => 
         array (
+            'Xiaoler\\Blade\\' => 14,
             'XdgBaseDir\\' => 11,
         ),
         'S' => 
@@ -49,6 +52,7 @@ class ComposerStaticInit4322521dd8158eda6cdfaa50df35678d
             'ROOT\\Library\\PLUGINS\\' => 21,
             'ROOT\\Library\\Model\\' => 19,
             'ROOT\\Library\\Api\\' => 17,
+            'ROOT\\App\\' => 9,
             'ROOT\\' => 5,
         ),
         'P' => 
@@ -80,6 +84,10 @@ class ComposerStaticInit4322521dd8158eda6cdfaa50df35678d
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
         ),
+        'F' => 
+        array (
+            'FastRoute\\' => 10,
+        ),
         'D' => 
         array (
             'Dotenv\\' => 7,
@@ -97,6 +105,10 @@ class ComposerStaticInit4322521dd8158eda6cdfaa50df35678d
     );
 
     public static $prefixDirsPsr4 = array (
+        'Xiaoler\\Blade\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/xiaoler/blade/src',
+        ),
         'XdgBaseDir\\' => 
         array (
             0 => __DIR__ . '/..' . '/dnoegel/php-xdg-base-dir/src',
@@ -177,6 +189,10 @@ class ComposerStaticInit4322521dd8158eda6cdfaa50df35678d
         array (
             0 => __DIR__ . '/../..' . '/library/Api',
         ),
+        'ROOT\\App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
+        ),
         'ROOT\\' => 
         array (
             0 => __DIR__ . '/../..' . '/',
@@ -224,6 +240,10 @@ class ComposerStaticInit4322521dd8158eda6cdfaa50df35678d
         'GuzzleHttp\\' => 
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
+        ),
+        'FastRoute\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nikic/fast-route/src',
         ),
         'Dotenv\\' => 
         array (

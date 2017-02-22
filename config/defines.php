@@ -37,4 +37,8 @@ if(!defined('CONF')){
     define('CONF',            $configDir);
 }
 
+if(!defined('APP')) {
+    define('APP',            $rootDir . '/app');
+}
+
 
