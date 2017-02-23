@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3e91ce53a21618b25a273f3ad24049fd",
+    "content-hash": "6e32b0ae8d40ef4e34db2de6a958d064",
     "packages": [
         {
             "name": "ark/database",
@@ -427,6 +427,54 @@
                 "uri"
             ],
             "time": "2016-06-24T23:00:38+00:00"
+        },
+        {
+            "name": "ircmaxell/filterus",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ircmaxell/filterus.git",
+                "reference": "6670d75f978b2713e1ec33acbdea73c92216e726"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://packagist.phpcomposer.com/files/ircmaxell/filterus/6670d75f978b2713e1ec33acbdea73c92216e726.zip",
+                "reference": "6670d75f978b2713e1ec33acbdea73c92216e726",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "lib/Filterus/functions.php"
+                ],
+                "psr-0": {
+                    "Filterus": "lib"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anthony Ferrara",
+                    "email": "ircmaxell@php.net",
+                    "homepage": "http://blog.ircmaxell.com"
+                }
+            ],
+            "description": "A library for filtering variables in PHP",
+            "homepage": "https://github.com/ircmaxell/filterus",
+            "keywords": [
+                "filter",
+                "security"
+            ],
+            "time": "2016-08-15T20:09:15+00:00"
         },
         {
             "name": "jakub-onderka/php-console-color",

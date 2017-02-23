@@ -19,4 +19,5 @@ return array(
     '37a3dc5111fe8f707ab4c132ef1dbc62' => $vendorDir . '/guzzlehttp/guzzle/src/functions_include.php',
     'e1edc6b39e340029dfa1d72c228b8497' => $vendorDir . '/xiaoler/blade/src/helpers.php',
     '253c157292f75eb38082b5acb06f3f01' => $vendorDir . '/nikic/fast-route/src/functions.php',
+    'a7430ded26095af01b44526469290d97' => $vendorDir . '/ircmaxell/filterus/lib/Filterus/functions.php',
 );

@@ -3526,5 +3526,55 @@
             "testing",
             "xunit"
         ]
+    },
+    {
+        "name": "ircmaxell/filterus",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ircmaxell/filterus.git",
+            "reference": "6670d75f978b2713e1ec33acbdea73c92216e726"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://packagist.phpcomposer.com/files/ircmaxell/filterus/6670d75f978b2713e1ec33acbdea73c92216e726.zip",
+            "reference": "6670d75f978b2713e1ec33acbdea73c92216e726",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^5"
+        },
+        "time": "2016-08-15T20:09:15+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "lib/Filterus/functions.php"
+            ],
+            "psr-0": {
+                "Filterus": "lib"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Anthony Ferrara",
+                "email": "ircmaxell@php.net",
+                "homepage": "http://blog.ircmaxell.com"
+            }
+        ],
+        "description": "A library for filtering variables in PHP",
+        "homepage": "https://github.com/ircmaxell/filterus",
+        "keywords": [
+            "filter",
+            "security"
+        ]
     }
 ]

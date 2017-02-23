@@ -20,6 +20,7 @@ class ComposerStaticInit4322521dd8158eda6cdfaa50df35678d
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         'e1edc6b39e340029dfa1d72c228b8497' => __DIR__ . '/..' . '/xiaoler/blade/src/helpers.php',
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
+        'a7430ded26095af01b44526469290d97' => __DIR__ . '/..' . '/ircmaxell/filterus/lib/Filterus/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -320,6 +321,13 @@ class ComposerStaticInit4322521dd8158eda6cdfaa50df35678d
             'JakubOnderka\\PhpConsoleColor' => 
             array (
                 0 => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src',
+            ),
+        ),
+        'F' => 
+        array (
+            'Filterus' => 
+            array (
+                0 => __DIR__ . '/..' . '/ircmaxell/filterus/lib',
             ),
         ),
         'D' => 
