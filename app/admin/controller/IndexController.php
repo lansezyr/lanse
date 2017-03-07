@@ -15,6 +15,6 @@ class IndexController extends AdminBaseController {
     }
 
     public function defaultAction() {
-        $this->render(['a' => 'hello world!'], 'index.default');
+        $this->render('index.default', ['a' => 'hello world!']);
     }
 }

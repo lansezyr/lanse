@@ -8,19 +8,22 @@
  */
 namespace Root\App\Admin\Base;
 
-class AdminBaseController extends \Root\App\Assists\BaseController
+use \Root\App\Assists\BaseController;
+
+class AdminBaseController extends BaseController
 {
     public function init() {
 
     }
 
     /**
-     * @param string $data
-     * @param string $tpl
+     * 模板渲染
+     * @param $file
+     * @param $params
+     * @return mixed
      */
-    protected function render($data, $tpl = '')
+    protected function render($file, $params)
     {
-        echo service('template')->setChannel('admin')->getView()->make($tpl, $data)->render();
-        exit;
+        return self::renderTpl('admin',$file, $params);
     }
 }

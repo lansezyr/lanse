@@ -75,7 +75,7 @@ class Start
         }
         $oClass = new $class;
 
-        return $oClass->defaultAction($req, $res, $args);
+        return $oClass->run($req, $res, $args);
     }
 
     /**
