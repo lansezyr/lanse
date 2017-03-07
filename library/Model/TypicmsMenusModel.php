@@ -6,9 +6,9 @@
  * (使用library/Util/scripts/create_db_model.php生成)
  */
 
-namespace ROOT\Library\Model;
+namespace Root\Library\Model;
 
-use \ROOT\Library\Util\Mysql\PdoManager as BaseModel;
+use \Root\Library\Util\Mysql\PdoManager as BaseModel;
 
 class TypicmsMenusModel extends BaseModel {
 

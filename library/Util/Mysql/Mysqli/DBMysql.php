@@ -4,7 +4,7 @@
  * 数据库操作的类库
  */
 
-namespace ROOT\Library\Util\Mysql\Mysqli;
+namespace Root\Library\Util\Mysql\Mysqli;
 
 if (!defined('SLOW_QUERY_MIN')) {
     define('SLOW_QUERY_MIN', 200);

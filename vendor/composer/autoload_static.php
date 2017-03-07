@@ -12,15 +12,15 @@ class ComposerStaticInit4322521dd8158eda6cdfaa50df35678d
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         'bd9634f2d41831496de0d3dfe4c94881' => __DIR__ . '/..' . '/symfony/polyfill-php56/bootstrap.php',
-        'e7223560d890eab89cda23685e711e2c' => __DIR__ . '/..' . '/psy/psysh/src/Psy/functions.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
+        'e7223560d890eab89cda23685e711e2c' => __DIR__ . '/..' . '/psy/psysh/src/Psy/functions.php',
+        '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
-        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         'e1edc6b39e340029dfa1d72c228b8497' => __DIR__ . '/..' . '/xiaoler/blade/src/helpers.php',
-        '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
         'a7430ded26095af01b44526469290d97' => __DIR__ . '/..' . '/ircmaxell/filterus/lib/Filterus/functions.php',
+        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -54,22 +54,28 @@ class ComposerStaticInit4322521dd8158eda6cdfaa50df35678d
             'Symfony\\Component\\Debug\\' => 24,
             'Symfony\\Component\\Console\\' => 26,
             'SuperClosure\\' => 13,
+            'Slim\\' => 5,
         ),
         'R' => 
         array (
+            'Root\\Library\\Util\\' => 18,
+            'Root\\Library\\PLUGINS\\' => 21,
+            'Root\\Library\\Model\\' => 19,
+            'Root\\Library\\Api\\' => 17,
+            'Root\\App\\Assists\\' => 17,
+            'Root\\App\\Admin\\Controller\\' => 26,
+            'Root\\App\\Admin\\Base\\' => 20,
+            'Root\\App\\Admin\\' => 15,
+            'Root\\App\\' => 9,
+            'Root\\' => 5,
             'Ramsey\\Uuid\\' => 12,
-            'ROOT\\Library\\Util\\' => 18,
-            'ROOT\\Library\\PLUGINS\\' => 21,
-            'ROOT\\Library\\Model\\' => 19,
-            'ROOT\\Library\\Api\\' => 17,
-            'ROOT\\App\\' => 9,
-            'ROOT\\' => 5,
         ),
         'P' => 
         array (
             'Psy\\' => 4,
             'Psr\\Log\\' => 8,
             'Psr\\Http\\Message\\' => 17,
+            'Psr\\Container\\' => 14,
             'PhpParser\\' => 10,
         ),
         'N' => 
@@ -90,6 +96,7 @@ class ComposerStaticInit4322521dd8158eda6cdfaa50df35678d
         ),
         'I' => 
         array (
+            'Interop\\Container\\' => 18,
             'Illuminate\\' => 11,
         ),
         'G' => 
@@ -115,6 +122,7 @@ class ComposerStaticInit4322521dd8158eda6cdfaa50df35678d
         ),
         'A' => 
         array (
+            'Ark\\Template\\' => 13,
             'Ark\\Database\\' => 13,
         ),
     );
@@ -198,33 +206,53 @@ class ComposerStaticInit4322521dd8158eda6cdfaa50df35678d
         array (
             0 => __DIR__ . '/..' . '/jeremeamia/SuperClosure/src',
         ),
-        'Ramsey\\Uuid\\' => 
+        'Slim\\' => 
         array (
-            0 => __DIR__ . '/..' . '/ramsey/uuid/src',
+            0 => __DIR__ . '/..' . '/slim/slim/Slim',
         ),
-        'ROOT\\Library\\Util\\' => 
+        'Root\\Library\\Util\\' => 
         array (
             0 => __DIR__ . '/../..' . '/library/Util',
         ),
-        'ROOT\\Library\\PLUGINS\\' => 
+        'Root\\Library\\PLUGINS\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/plugins',
+            0 => __DIR__ . '/../..' . '/library/plugins',
         ),
-        'ROOT\\Library\\Model\\' => 
+        'Root\\Library\\Model\\' => 
         array (
             0 => __DIR__ . '/../..' . '/library/Model',
         ),
-        'ROOT\\Library\\Api\\' => 
+        'Root\\Library\\Api\\' => 
         array (
             0 => __DIR__ . '/../..' . '/library/Api',
         ),
-        'ROOT\\App\\' => 
+        'Root\\App\\Assists\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/assists',
+        ),
+        'Root\\App\\Admin\\Controller\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/admin/controller',
+        ),
+        'Root\\App\\Admin\\Base\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/admin/base',
+        ),
+        'Root\\App\\Admin\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/admin',
+        ),
+        'Root\\App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app',
         ),
-        'ROOT\\' => 
+        'Root\\' => 
         array (
             0 => __DIR__ . '/../..' . '/',
+        ),
+        'Ramsey\\Uuid\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ramsey/uuid/src',
         ),
         'Psy\\' => 
         array (
@@ -237,6 +265,10 @@ class ComposerStaticInit4322521dd8158eda6cdfaa50df35678d
         'Psr\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
+        'Psr\\Container\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/container/src',
         ),
         'PhpParser\\' => 
         array (
@@ -256,7 +288,11 @@ class ComposerStaticInit4322521dd8158eda6cdfaa50df35678d
         ),
         'Kilte\\Pagination\\' => 
         array (
-            0 => __DIR__ . '/..' . '/kilte/pagination/source',
+            0 => __DIR__ . '/..' . '/amstaffix/pagination/source',
+        ),
+        'Interop\\Container\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/container-interop/container-interop/src/Interop/Container',
         ),
         'Illuminate\\' => 
         array (
@@ -298,6 +334,10 @@ class ComposerStaticInit4322521dd8158eda6cdfaa50df35678d
         array (
             0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
         ),
+        'Ark\\Template\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ark/template/src',
+        ),
         'Ark\\Database\\' => 
         array (
             0 => __DIR__ . '/..' . '/ark/database/src',
@@ -310,6 +350,10 @@ class ComposerStaticInit4322521dd8158eda6cdfaa50df35678d
             'Prophecy\\' => 
             array (
                 0 => __DIR__ . '/..' . '/phpspec/prophecy/src',
+            ),
+            'Pimple' => 
+            array (
+                0 => __DIR__ . '/..' . '/pimple/pimple/src',
             ),
         ),
         'J' => 
@@ -674,6 +718,7 @@ class ComposerStaticInit4322521dd8158eda6cdfaa50df35678d
         'PHP_Token_NEW' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_NS_C' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_NS_SEPARATOR' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
+        'PHP_Token_NULLSAFE_OBJECT_OPERATOR' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_NUM_STRING' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_OBJECT_CAST' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_OBJECT_OPERATOR' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',

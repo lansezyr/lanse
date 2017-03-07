@@ -3,7 +3,7 @@
  * Client.php
  * User: lanse
  */
-namespace ROOT\Library\Util\Client;
+namespace Root\Library\Util\Client;
 
 use Psr\Http\Message\RequestInterface;
 use GuzzleHttp\HandlerStack;

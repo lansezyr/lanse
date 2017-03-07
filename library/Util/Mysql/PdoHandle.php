@@ -6,7 +6,7 @@
  * Date: 16-09-09 上午11:12
  */
 
-namespace ROOT\Library\Util\Mysql;
+namespace Root\Library\Util\Mysql;
 
 use PDO;
 use Exception;

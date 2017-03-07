@@ -6,7 +6,7 @@
  * Time: 下午7:41
  */
 
-namespace ROOT\Library\Util;
+namespace Root\Library\Util;
 
 
 class PaginationUtil

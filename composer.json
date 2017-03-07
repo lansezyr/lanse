@@ -5,19 +5,24 @@
     "guzzlehttp/guzzle": "^6.2",
     "ark/database": "^0.1.8",
     "xiaoler/blade":"*",
-    "nikic/fast-route": "^0.7.0",
-    "kilte/pagination": "^1.1",
+    "amstaffix/pagination": "^1.1",
     "phpunit/phpunit": "~4.0",
-    "ircmaxell/filterus": "^1.0.0"
+    "ircmaxell/filterus": "^1.0.0",
+    "slim/slim": "^3.3.0",
+    "ark/template": "^0.1.1"
   },
   "autoload": {
     "psr-4": {
-      "ROOT\\": ".",
-      "ROOT\\Library\\PLUGINS\\": "plugins",
-      "ROOT\\Library\\Api\\": "library/Api",
-      "ROOT\\Library\\Util\\": "library/Util",
-      "ROOT\\Library\\Model\\": "library/Model",
-      "ROOT\\App\\": "app"
+      "Root\\": ".",
+      "Root\\Library\\PLUGINS\\": "library/plugins",
+      "Root\\Library\\Api\\": "library/Api",
+      "Root\\Library\\Util\\": "library/Util",
+      "Root\\Library\\Model\\": "library/Model",
+      "Root\\App\\": "app",
+      "Root\\App\\Admin\\": "app/admin",
+      "Root\\App\\Assists\\": "app/assists",
+      "Root\\App\\Admin\\Base\\": "app/admin/base",
+      "Root\\App\\Admin\\Controller\\": "app/admin/controller"
     }
   }
 }

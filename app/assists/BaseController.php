@@ -6,6 +6,8 @@
  * Time: 下午7:22
  */
 
+namespace ROOT\App\Assists;
+
 class BaseController {
     public function init() {
 

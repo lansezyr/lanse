@@ -4,7 +4,7 @@ require_once dirname(__DIR__) . '/../../bootstrap.php';
 require_once CONF . '/db_config.php';
 require_once UTIL . '/PhpCodeGenerator.php';
 
-use \ROOT\Library\Util\Mysql\Mysqli\DBMysql;
+use \Root\Library\Util\Mysql\Mysqli\DBMysql;
 
 class CreateDatabaseModel {
 
@@ -93,7 +93,7 @@ class CreateDatabaseModel {
 
 namespace ROOT\Library\Model;
 
-use \ROOT\Library\Util\Mysql\PdoManager as BaseModel;
+use \Root\Library\Util\Mysql\PdoManager as BaseModel;
 
 class {$className} extends BaseModel {
 

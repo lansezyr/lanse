@@ -9,4 +9,4 @@
 
 require_once dirname(__DIR__).'/bootstrap.php';
 
-\ROOT\App\App::run();
+\Root\App\Start::serve();

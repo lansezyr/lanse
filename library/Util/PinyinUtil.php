@@ -2,7 +2,7 @@
 /**
  * PinyinNamespace
  */
-namespace ROOT\Library\Util;
+namespace Root\Library\Util;
 
 use \ROOT\Library\Util\PinYin\PinyinConfig;
 class PinyinUtil{

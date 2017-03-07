@@ -1,6 +1,6 @@
 <?php
 /**
- * Random_* Compatibility library 
+ * Random_* Compatibility Library 
  * for using the new PHP 7 random_* API in PHP 5 projects
  * 
  * The MIT License (MIT)
@@ -55,6 +55,11 @@ if (!is_callable('random_bytes')) {
         }
 
         $buf = '';
+        if (!class_exists('COM')) {
+            throw new Error(
+                'COM does not exist'
+            );
+        }
         $util = new COM('CAPICOM.Utilities.1');
         $execCount = 0;
 

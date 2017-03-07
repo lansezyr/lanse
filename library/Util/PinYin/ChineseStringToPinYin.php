@@ -2,7 +2,7 @@
 /**
  * 汉字字符串转换成对应的拼音字符串，数字、字母不变
  */
-namespace ROOT\Library\Util\PinYin;
+namespace Root\Library\Util\PinYin;
 
 class ChineseStringToPinYin
 {

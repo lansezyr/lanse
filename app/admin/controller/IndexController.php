@@ -5,7 +5,9 @@
  * Date: 17-2-21
  * Time: 下午7:18
  */
-require_once APP . '/admin/include/AdminBaseController.php';
+namespace Root\App\Admin\Controller;
+
+use \Root\App\Admin\Base\AdminBaseController;
 
 class IndexController extends AdminBaseController {
     public function init() {

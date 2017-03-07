@@ -1,5 +1,5 @@
 <?php
-namespace ROOT\Library\Util\PinYin;
+namespace Root\Library\Util\PinYin;
 
 class PinyinConfig{
         /// {{{ 汉字与拼音的映射数组

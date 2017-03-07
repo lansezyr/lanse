@@ -15,11 +15,11 @@ require_once dirname(__FILE__) .'/vendor/autoload.php';
 require_once dirname(__FILE__) .'/config/defines.php';
 
 // 路由配置
-//require_once dirname(__FILE__) .'/config/routes.php';
+require_once dirname(__FILE__) .'/config/routes.php';
 //注册频道
 require_once dirname(__FILE__) .'/config/config.inc.php';
 
-//载入模板引擎
-require_once dirname(__FILE__) . '/app/assists/View.php';
+//引入快捷方式
+require_once dirname(__FILE__) .'/app/shortcut.php';
 
-\ROOT\App\App::init();
+\Root\App\Start::init(ROOT);

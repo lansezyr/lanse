@@ -17,13 +17,22 @@
 //});
 //
 //Macaw::dispatch();
+//return [
+//
+//    //常规地址
+//    [
+//        ['GET', 'POST', 'DELETE', 'PUT'],
+//        '/{dir:[\w-]+}/{controller:[\w-]+}/{act:[\w-]+}{slashes:/?}',
+//        '\\ROOT\\App\\Basic::handle'
+//    ]
+//
+//];
 return [
-
-    //常规地址
     [
-        ['GET', 'POST', 'DELETE', 'PUT'],
-        '/{dir:[\w-]+}/{controller:[\w-]+}/{act:[\w-]+}{slashes:/?}',
-        '\\ROOT\\App\\Basic::handle'
-    ]
-
+        ['GET', 'POST'],
+        '/{path_:.*}',
+        '\\ROOT\\App\\Start::handlePath',
+        ''
+        //new Consign\Library\Api\Auth\AuthApi(),
+    ],
 ];

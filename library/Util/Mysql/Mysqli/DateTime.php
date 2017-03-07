@@ -4,7 +4,7 @@
  * 常用的时间操作函数
  */
 
-namespace ROOT\Library\Util\Mysql\Mysqli;
+namespace Root\Library\Util\Mysql\Mysqli;
 
 class DateTime
 {

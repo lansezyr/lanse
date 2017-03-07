@@ -5,7 +5,7 @@
  * @author lanse
  */
 
-namespace ROOT\Library\Util;
+namespace Root\Library\Util;
 
 class HttpRequestUtil
 {
