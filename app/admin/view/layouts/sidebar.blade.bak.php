@@ -31,15 +31,15 @@
                                 menu-open
                                 @endif">
                             @if (!empty($menu['items']))
-                                @foreach ($menu['items'] as $item)
-                                    <li @if ($currentUri == $item['uri'])
-                                        class="active"
-                                            @endif >
-                                        <a href="{{$item['urlParams']}}}">
-                                            <i class="fa fa-circle-o"></i>{{$item['name']}}
-                                        </a>
-                                    </li>
-                                @endforeach
+                            @foreach ($menu['items'] as $item)
+                                <li @if ($currentUri == $item['uri'])
+                                    class="active"
+                                    @endif >
+                                    <a href="{{$item['urlParams']}}}">
+                                        <i class="fa fa-circle-o"></i>{{$item['name']}}
+                                    </a>
+                                </li>
+                            @endforeach
                             @endif
                         </ul>
                     </li>

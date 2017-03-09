@@ -8,6 +8,8 @@
 
 namespace Root\App\Assists;
 
+use \Root\Library\Util\HttpRequestUtil;
+
 class BaseController
 {
     protected $request;
@@ -22,6 +24,10 @@ class BaseController
     {
     }
 
+    public function init() {
+
+    }
+
     public function run($req, $res, $args)
     {
         $this->request = $req;
@@ -32,6 +38,7 @@ class BaseController
         if ($action && preg_match('/^\w+$/', $action) && ($action = strtolower($action) . 'Action') && method_exists($this, $action)) {
             return $this->$action();
         } else {
+            $this->init();
             return $this->defaultAction();
         }
     }
@@ -50,6 +57,13 @@ class BaseController
      */
     protected function renderTpl($channel, $file, $params)
     {
+        //引入菜单
+        $menu = service('menu');
+        if(!isset($params['menuBar'])) {
+            $params['menuBar'] = $menu;
+        }
+        //获取当前页面
+
         $fetch = service('template')->setChannel($channel)->getView()->make($file, $params)->render();
         $this->response->write($fetch);
         return $this->response;

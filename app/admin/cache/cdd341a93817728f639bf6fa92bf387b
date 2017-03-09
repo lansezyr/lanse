@@ -32,17 +32,17 @@
     <!--top导航-->
     <?php echo $__env->make("layouts.header", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
-<!--左侧菜单-->
-<?php echo $__env->make("layouts.sidebar", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    <!--左侧菜单-->
+    <?php echo $__env->make("layouts.sidebar", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
 <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
         <?php $__env->startSection('content'); ?>
-        <?php $__env->stopSection(); ?>
+        <?php echo $__env->yieldSection(); ?>
     </div>
 
-    <?php $__env->startSection('content'); ?>
-    <?php $__env->stopSection(); ?>
+    <!--页尾-->
+    <?php echo $__env->make("layouts.footer", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 </div>
 
 </body>

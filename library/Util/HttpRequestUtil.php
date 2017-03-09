@@ -73,8 +73,8 @@ class HttpRequestUtil
     private static function makeSafeUrlForRedirect($url)
     {
         $url = htmlspecialchars_decode($url);
-        if (preg_match ('/#$/', $url)) {
-            $url = str_replace ('#', '', $url);
+        if (preg_match('/#$/', $url)) {
+            $url = str_replace('#', '', $url);
         }
         return preg_replace("/[\"\'\n\r<>]+/", "", $url);
     }
@@ -87,12 +87,12 @@ class HttpRequestUtil
     public static function getCurrentUrl($show_script_name = NULL)
     {
         $pageURL = 'http';
-        if (! empty ($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] == "on") $pageURL .= "s";
+        if (!empty ($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] == "on") $pageURL .= "s";
         $pageURL .= "://";
         //donkey-proxy 会向业务线后端机器发送第一级的端口http_port
-        $port = isset($_SERVER['HTTP_PORT'])?$_SERVER['HTTP_PORT']:$_SERVER["SERVER_PORT"];
+        $port = isset($_SERVER['HTTP_PORT']) ? $_SERVER['HTTP_PORT'] : $_SERVER["SERVER_PORT"];
         if ($port != "80") {
-            $pageURL .= $_SERVER["HTTP_HOST"] . ":" . $port . ( $show_script_name ? $_SERVER['SCRIPT_NAME'] : $_SERVER["REQUEST_URI"]);
+            $pageURL .= $_SERVER["HTTP_HOST"] . ":" . $port . ($show_script_name ? $_SERVER['SCRIPT_NAME'] : $_SERVER["REQUEST_URI"]);
         } else {
             $pageURL .= $_SERVER["HTTP_HOST"] . ($show_script_name ? $_SERVER['SCRIPT_NAME'] : $_SERVER["REQUEST_URI"]);
         }
@@ -104,7 +104,7 @@ class HttpRequestUtil
      * @param $url
      * @param bool $inIframe
      */
-    public static function redirect($url, $inIframe=false)
+    public static function redirect($url, $inIframe = false)
     {
         self::_redirect($url, 302, $inIframe);
     }
@@ -114,7 +114,7 @@ class HttpRequestUtil
      * @param int $code
      * @param bool $inIframe
      */
-    private static function _redirect($url, $code=302, $inIframe=false)
+    private static function _redirect($url, $code = 302, $inIframe = false)
     {
         $url = self::makeSafeUrlForRedirect($url);
         if (!$inIframe) {
@@ -154,7 +154,7 @@ GJ.use("talk_to_parent", function(){
 <script src="http://sta.ganji.com/cgi/ganji_sta.php?file=ganji" type="text/javascript"></script>
 <script type="text/javascript">
 GJ.use("talk_to_parent", function(){
-    GJ.talkToParent.parentRedirect("'.$url.'");
+    GJ.talkToParent.parentRedirect("' . $url . '");
 });
 </script>
 </body>
@@ -167,7 +167,7 @@ GJ.use("talk_to_parent", function(){
      * @param $url
      * @param bool $inIframe
      */
-    public static function redirectPermanent($url, $inIframe=false)
+    public static function redirectPermanent($url, $inIframe = false)
     {
         self::_redirect($url, 301, $inIframe);
     }
@@ -178,7 +178,7 @@ GJ.use("talk_to_parent", function(){
     public static function redirectToSelf()
     {
         $url = $_SERVER['REQUEST_URI'];
-        self::redirect ($url);
+        self::redirect($url);
     }
 
 
@@ -192,9 +192,9 @@ GJ.use("talk_to_parent", function(){
     public static function getPOST($key, $default = false, $enableHtml = false)
     {
         if (isset ($_POST[$key])) {
-            if(!$enableHtml && is_array($_POST[$key])) {
+            if (!$enableHtml && is_array($_POST[$key])) {
                 $value = array();
-                foreach($_POST[$key] as $pkey => $pval) {
+                foreach ($_POST[$key] as $pkey => $pval) {
                     if (is_string($pval)) {
                         $value[$pkey] = strip_tags($pval);
                     } else {
@@ -285,18 +285,18 @@ GJ.use("talk_to_parent", function(){
      * @param boolean $returnAll 如果有多个ip时，是否会部返回。默认情况下为false
      * @return string|array|false
      */
-    public static function getIp($useInt = true, $returnAll=false)
+    public static function getIp($useInt = true, $returnAll = false)
     {
         $realIp = false;
 
         //先从 HTTP_CLIENT_IP 获取城市IP
         if ($realIp === false) {
             $ip = getenv('HTTP_CLIENT_IP');
-            if($ip && strcasecmp($ip, "unknown")) {
+            if ($ip && strcasecmp($ip, "unknown")) {
                 $realIp = $ip;
             } elseif (isset($_SERVER['HTTP_CLIENT_IP'])) {
                 $ip = $_SERVER['HTTP_CLIENT_IP'];
-                if($ip && strcasecmp($ip, "unknown")) {
+                if ($ip && strcasecmp($ip, "unknown")) {
                     $realIp = $ip;
                 }
             }
@@ -305,11 +305,11 @@ GJ.use("talk_to_parent", function(){
         //从 HTTP_X_FORWARDED_FOR 获取城市IP
         if ($realIp === false) {
             $ip = getenv('HTTP_X_FORWARDED_FOR');
-            if($ip && strcasecmp($ip, "unknown")) {
+            if ($ip && strcasecmp($ip, "unknown")) {
                 $realIp = $ip;
             } elseif (isset($_SERVER['HTTP_X_FORWARDED_FOR'])) {
                 $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
-                if($ip && strcasecmp($ip, "unknown")) {
+                if ($ip && strcasecmp($ip, "unknown")) {
                     $realIp = $ip;
                 }
             }
@@ -318,11 +318,11 @@ GJ.use("talk_to_parent", function(){
         //从 REMOTE_ADDR 获取城市IP
         if ($realIp === false) {
             $ip = getenv('REMOTE_ADDR');
-            if($ip && strcasecmp($ip, "unknown")) {
+            if ($ip && strcasecmp($ip, "unknown")) {
                 $realIp = $ip;
             } elseif (isset($_SERVER['REMOTE_ADDR'])) {
                 $ip = $_SERVER['REMOTE_ADDR'];
-                if($ip && strcasecmp($ip, "unknown")) {
+                if ($ip && strcasecmp($ip, "unknown")) {
                     $realIp = $ip;
                 }
             }
@@ -382,7 +382,7 @@ GJ.use("talk_to_parent", function(){
 
         $ips = preg_split("/[，, _]+/", $ip);
         if (!$returnAll) {
-            $ip = $ips[count($ips)-1];
+            $ip = $ips[count($ips) - 1];
             return $useInt ? self::ip2long($ip) : $ip;
         }
 
@@ -400,7 +400,7 @@ GJ.use("talk_to_parent", function(){
      */
     public static function ip2long($ip)
     {
-        return sprintf ('%u', ip2long ($ip));
+        return sprintf('%u', ip2long($ip));
     }
 
     /**
@@ -410,7 +410,7 @@ GJ.use("talk_to_parent", function(){
      */
     public static function long2ip($long)
     {
-        return long2ip ($long);
+        return long2ip($long);
     }
 
     /**
@@ -428,7 +428,8 @@ GJ.use("talk_to_parent", function(){
         );
     }
 
-    public static function parentRedirect($url) {
+    public static function parentRedirect($url)
+    {
         echo '<html><head><title>redirect</title></head><body>
                 <script src="http://sta.ganji.com/cgi/ganji_sta.php?file=ganji" type="text/javascript"></script>
                 <script type="text/javascript">
@@ -436,6 +437,58 @@ GJ.use("talk_to_parent", function(){
                 win.location.href = "' . $url . '";
                 </script>
               </body></html>';
+    }
+
+    /**
+     * @return string
+     */
+    public static function getHostUrl()
+    {
+        return 'http://' . $_SERVER['HTTP_HOST'];
+    }
+
+    /**
+     * @return string
+     */
+    public static function getBaseUrl()
+    {
+        $urlPath = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+        return self::getHostUrl() . $urlPath;
+    }
+
+    /**
+     * @param $uri
+     * @param string $params
+     * @return string
+     */
+    public static function urlFor($uri, $params = '')
+    {
+        $params = (!empty($params) && is_array($params)) ? http_build_query($params) : $params;
+        $url = self::getHostUrl() . '/' . $uri;
+        if (!empty($params)) {
+            $url .= '?' . $params;
+        }
+        return $url;
+    }
+
+    /**
+     * @brief 二维数组指定列搜索
+     * @param $arr 被搜索的数组
+     * @param $key 二维数组key
+     * @param $val 二维数组val
+     * @return bool|int|string
+     */
+    public static function arraySearch($arr, $key, $val)
+    {
+        if (empty($arr)) {
+            return false;
+        }
+        foreach ($arr as $idx => $item) {
+            if ($item[$key] == $val) {
+                return $idx;
+            }
+        }
+        return false;
     }
 
 }

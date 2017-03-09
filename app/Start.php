@@ -32,8 +32,8 @@ class Start
         //调试
         if ($container['settings']['displayErrorDetails']) {
             ini_set('display_errors', 1);
-            //error_reporting(E_ALL ^ E_DEPRECATED ^ E_STRICT ^ E_NOTICE ^ E_WARNING);
-            error_reporting(E_ALL);
+            error_reporting(E_ALL ^ E_DEPRECATED ^ E_STRICT ^ E_NOTICE ^ E_WARNING);
+            //error_reporting(E_ALL);
         }
 
         //session对应的cookie域名
@@ -124,8 +124,8 @@ class Start
         }
 
         $class = implode('\\', $path);
-        $class = '\\App\\Controller\\' . $class . 'Controller';
-
+        $class = '\\App\\Admin\\Controller\\' . $class . 'Controller';
+echo $class;die;
         return $class;
     }
 

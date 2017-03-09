@@ -8,6 +8,7 @@
 namespace Root\App\Admin\Controller;
 
 use \Root\App\Admin\Base\AdminBaseController;
+use \Root\Library\Util\HttpRequestUtil;
 
 class IndexController extends AdminBaseController {
     public function init() {

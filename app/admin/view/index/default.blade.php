@@ -1,5 +1,6 @@
 @extends('layouts.master')
 <!-- Main content -->
+@section('content')
 <section class="content">
     <div class="box">
         <div class="box-header with-border">
@@ -13,9 +14,9 @@
             </div>
         </div>
         <div class="box-body">
-            欢迎!
         </div>
     </div>
     <!-- /.box -->
 </section>
-<!-- Default box -->
+@stop
+<!--Default box -->

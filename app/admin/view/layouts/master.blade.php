@@ -32,17 +32,17 @@
     <!--top导航-->
     @include("layouts.header")
 
-<!--左侧菜单-->
-@include("layouts.sidebar")
+    <!--左侧菜单-->
+    @include("layouts.sidebar")
 
 <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
         @section('content')
-        @endsection
+        @show
     </div>
 
-    @section('content')
-    @endsection
+    <!--页尾-->
+    @include("layouts.footer")
 </div>
 
 </body>

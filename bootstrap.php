@@ -5,9 +5,6 @@
  * Date: 17-2-21
  * Time: 下午3:17
  */
-
-ini_set('display_errors', 1);
-error_reporting(E_ALL ^ E_DEPRECATED ^ E_STRICT ^ E_NOTICE ^ E_WARNING);
 //自动引入
 require_once dirname(__FILE__) .'/vendor/autoload.php';
 
