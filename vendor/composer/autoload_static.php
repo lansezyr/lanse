@@ -62,6 +62,8 @@ class ComposerStaticInit4322521dd8158eda6cdfaa50df35678d
             'Root\\Library\\PLUGINS\\' => 21,
             'Root\\Library\\Model\\' => 19,
             'Root\\Library\\Api\\' => 17,
+            'Root\\App\\Web\\Controller\\' => 24,
+            'Root\\App\\Web\\Base\\' => 18,
             'Root\\App\\Assists\\' => 17,
             'Root\\App\\Admin\\Controller\\' => 26,
             'Root\\App\\Admin\\Base\\' => 20,
@@ -226,6 +228,14 @@ class ComposerStaticInit4322521dd8158eda6cdfaa50df35678d
         array (
             0 => __DIR__ . '/../..' . '/library/Api',
         ),
+        'Root\\App\\Web\\Controller\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/web/controller',
+        ),
+        'Root\\App\\Web\\Base\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/web/base',
+        ),
         'Root\\App\\Assists\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app/assists',
@@ -372,6 +382,13 @@ class ComposerStaticInit4322521dd8158eda6cdfaa50df35678d
             'Filterus' => 
             array (
                 0 => __DIR__ . '/..' . '/ircmaxell/filterus/lib',
+            ),
+        ),
+        'E' => 
+        array (
+            'Ehesp\\SteamLogin' => 
+            array (
+                0 => __DIR__ . '/..' . '/ehesp/steam-login/src',
             ),
         ),
         'D' => 

@@ -11,5 +11,6 @@ return array(
     'JakubOnderka\\PhpConsoleHighlighter' => array($vendorDir . '/jakub-onderka/php-console-highlighter/src'),
     'JakubOnderka\\PhpConsoleColor' => array($vendorDir . '/jakub-onderka/php-console-color/src'),
     'Filterus' => array($vendorDir . '/ircmaxell/filterus/lib'),
+    'Ehesp\\SteamLogin' => array($vendorDir . '/ehesp/steam-login/src'),
     'Doctrine\\Common\\Inflector\\' => array($vendorDir . '/doctrine/inflector/lib'),
 );

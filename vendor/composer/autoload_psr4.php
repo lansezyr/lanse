@@ -30,6 +30,8 @@ return array(
     'Root\\Library\\PLUGINS\\' => array($baseDir . '/library/plugins'),
     'Root\\Library\\Model\\' => array($baseDir . '/library/Model'),
     'Root\\Library\\Api\\' => array($baseDir . '/library/Api'),
+    'Root\\App\\Web\\Controller\\' => array($baseDir . '/app/web/controller'),
+    'Root\\App\\Web\\Base\\' => array($baseDir . '/app/web/base'),
     'Root\\App\\Assists\\' => array($baseDir . '/app/assists'),
     'Root\\App\\Admin\\Controller\\' => array($baseDir . '/app/admin/controller'),
     'Root\\App\\Admin\\Base\\' => array($baseDir . '/app/admin/base'),

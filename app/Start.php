@@ -11,7 +11,7 @@ namespace ROOT\App;
 class Start
 {
     //后台 首页
-    const DEFAULT_CONTROLLER = 'Root\\App\\Admin\\Controller\\IndexController';
+    const DEFAULT_CONTROLLER = '\\Root\\App\\Admin\\Controller\\IndexController';
 
     private static $slimApp;
 
@@ -123,9 +123,11 @@ class Start
             $path[$key] = implode('', array_map('ucfirst', $value));
         }
 
+        $module = reset($path);
+        array_shift($path);
         $class = implode('\\', $path);
-        $class = '\\App\\Admin\\Controller\\' . $class . 'Controller';
-echo $class;die;
+        $class = empty($class) ? 'Index' : $class;
+        $class = '\\Root\\App\\'.$module.'\\Controller\\' . $class . 'Controller';
         return $class;
     }
 
