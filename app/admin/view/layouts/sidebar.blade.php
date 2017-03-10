@@ -17,25 +17,21 @@
         <ul class="sidebar-menu">
             <li class="header">菜单导航</li>
             @if (!empty($menuBar))
-                {{$currentUri = substr($currentUri, 1)}}
                 @foreach ($menuBar as $menu)
-                    {{$isCurrentMenu = $this->arraySearch($menu['items'], 'uri', $currentUri)}}
-                    <li class="treeview @if ($isCurrentMenu !== false)
+                    <li class="treeview @if(\Root\Library\Util\ArrUtil::arraySearch($menu['item'], 'uri', $currentUri))
                             active
                             @endif">
                         <a href="javascript:">
                             <i class="fa {{$menu['style']}}"></i> <span>{{$menu['name']}}</span> <i
                                     class="fa fa-angle-left pull-right"></i>
                         </a>
-                        <ul class="treeview-menu @if ($isCurrentMenu !== false)
-                                menu-open
-                                @endif">
+                        <ul class="treeview-menu">
                             @if (!empty($menu['items']))
                                 @foreach ($menu['items'] as $item)
                                     <li @if ($currentUri == $item['uri'])
                                         class="active"
                                             @endif >
-                                        <a href="{{$item['urlParams']}}}">
+                                        <a href="/{{$item['uri']}}}">
                                             <i class="fa fa-circle-o"></i>{{$item['name']}}
                                         </a>
                                     </li>

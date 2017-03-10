@@ -8,8 +8,6 @@
 
 namespace Root\App\Assists;
 
-use \Root\Library\Util\HttpRequestUtil;
-
 class BaseController
 {
     protected $request;
@@ -57,13 +55,6 @@ class BaseController
      */
     protected function renderTpl($channel, $file, $params)
     {
-        //引入菜单
-        $menu = service('menu');
-        if(!isset($params['menuBar'])) {
-            $params['menuBar'] = $menu;
-        }
-        //获取当前页面
-
         $fetch = service('template')->setChannel($channel)->getView()->make($file, $params)->render();
         $this->response->write($fetch);
         return $this->response;

@@ -9,6 +9,7 @@
 namespace Root\App\Admin\Base;
 
 use \Root\App\Assists\BaseController;
+use \Root\Library\Util\HttpRequestUtil;
 
 class AdminBaseController extends BaseController
 {
@@ -24,6 +25,17 @@ class AdminBaseController extends BaseController
      */
     protected function render($file, $params)
     {
+        //引入菜单
+        $menu = service('menu');
+        if(!isset($params['menuBar'])) {
+            $params['menuBar'] = $menu;
+        }
+        //获取当前页面
+        $currentUri = HttpRequestUtil::getCurrentUri();
+        if(!isset($params['currentUri'])) {
+            $params['currentUri'] = $currentUri;
+        }
+
         return self::renderTpl('admin',$file, $params);
     }
 }

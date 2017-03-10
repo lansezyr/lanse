@@ -17,27 +17,21 @@
         <ul class="sidebar-menu">
             <li class="header">菜单导航</li>
             <?php if(!empty($menuBar)): ?>
-                <?php echo e($currentUri = substr($currentUri, 1)); ?>
-
                 <?php $__currentLoopData = $menuBar; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $menu): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
-                    <?php echo e($isCurrentMenu = $this->arraySearch($menu['items'], 'uri', $currentUri)); ?>
-
-                    <li class="treeview <?php if($isCurrentMenu !== false): ?>
+                    <li class="treeview <?php if(\Root\Library\Util\ArrUtil::arraySearch($menu['item'], 'uri', $currentUri)): ?>
                             active
                             <?php endif; ?>">
                         <a href="javascript:">
                             <i class="fa <?php echo e($menu['style']); ?>"></i> <span><?php echo e($menu['name']); ?></span> <i
                                     class="fa fa-angle-left pull-right"></i>
                         </a>
-                        <ul class="treeview-menu <?php if($isCurrentMenu !== false): ?>
-                                menu-open
-                                <?php endif; ?>">
+                        <ul class="treeview-menu">
                             <?php if(!empty($menu['items'])): ?>
                                 <?php $__currentLoopData = $menu['items']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
                                     <li <?php if($currentUri == $item['uri']): ?>
                                         class="active"
                                             <?php endif; ?> >
-                                        <a href="<?php echo e($item['urlParams']); ?>}">
+                                        <a href="/<?php echo e($item['uri']); ?>}">
                                             <i class="fa fa-circle-o"></i><?php echo e($item['name']); ?>
 
                                         </a>

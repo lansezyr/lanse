@@ -457,6 +457,15 @@ GJ.use("talk_to_parent", function(){
     }
 
     /**
+     * @return string
+     */
+    public static function getCurrentUri()
+    {
+        $urlPath = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+        return $urlPath;
+    }
+
+    /**
      * @param $uri
      * @param string $params
      * @return string

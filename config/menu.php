@@ -13,12 +13,12 @@ return [
         'items' => [
             [
                 'name'      => '保卖处理',
-                'uri'       => 'consign/list',
+                'uri'       => 'admin/consign/list',
                 'urlParams' => [],
             ],
             [
                 'name'      => '收购处理',
-                'uri'       => 'consign/acquisition',
+                'uri'       => 'admin/consign/acquisition',
                 'urlParams' => [],
             ],
         ],
@@ -29,12 +29,12 @@ return [
         'items' => [
             [
                 'name'      => '分单列表',
-                'uri'       => 'task/assign',
+                'uri'       => 'admin/task/assign',
                 'urlParams' => [],
             ],
             [
                 'name'      => '任务列表',
-                'uri'       => 'task/list',
+                'uri'       => 'admin/task/list',
                 'urlParams' => [],
             ],
         ],
@@ -45,12 +45,12 @@ return [
         'items' => [
             [
                 'name'      => '保卖人员地点配置',
-                'uri'       => 'address/user',
+                'uri'       => 'admin/address/user',
                 'urlParams' => [],
             ],
             [
                 'name'      => '车辆停放地点配置',
-                'uri'       => 'address/car',
+                'uri'       => 'admin/address/car',
                 'urlParams' => [],
             ],
         ],
